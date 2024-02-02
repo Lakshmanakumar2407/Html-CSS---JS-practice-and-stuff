@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid are</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: 20% 60% 20%;
+            grid-template-areas: 
+            'header header'
+            'article article'
+            'footer footer';
+            gap: 20px;
+            background-color: aquamarine;
+            margin: 0px;
+        }
+
+        .article{
+            grid-area: article;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            background-color: bisque;
+            grid-template-areas: 
+            'sidebar content content1'
+            'sidebar content content1';
+            gap: 5px;
+            border-radius: 20px;
+        }
+
+        .header {
+            background-color: lightcoral;
+            grid-area: header;
+        }
+
+        .footer {
+            background-color: lightseagreen;
+            grid-area: footer;
+        }
+
+        .sidebar {
+            background-color: lightgray;
+            grid-area: sidebar;
+        }
+
+        .content {
+            background-color: darkblue;
+            color: white;
+            grid-area: content;
+        }
+        
+        .subcontent{
+            background-color: black;
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr;
+            gap: inherit;
+            border-radius: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>This is header</p>
+    </div>
+    <div class="article">
+        <div class="sidebar">
+            <p> side bar content</p>
+        </div>
+        <div class="content">
+            <div class = 'subcontent'>
+                <p> this is the main content 1 </p>
+                <p> this is main content 2 </p>
+                <p> this is main content 3 </p>
+            </div>
+
+        </div>
+        <div class="content1">
+            <p> this is the main content </p>
+        </div>
+        <div class="content1">
+            <p> this is the main content </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This is footer</p>
+    </div>
+</body>
+</html>
