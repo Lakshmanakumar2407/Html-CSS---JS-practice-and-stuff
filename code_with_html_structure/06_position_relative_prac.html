@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position_prac</title>
+    <style>
+        body{
+            margin-bottom: 1000px;
+        }
+
+
+        img{
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container{
+            position: relative;
+            height: 400px;
+            width: 400px;
+        }
+
+        .offer{
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            position: absolute;
+            top:10px;
+            right: 0px;
+        }
+
+        .overlay{
+            background-color: rgba(255,255,255,0.5);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+
+            padding: 10px 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="attachments/typography_jet.jpg" alt="">
+        <div class="offer">
+            <span>20% off</span>
+        </div>
+        <div class="overlay">
+            <button>
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>

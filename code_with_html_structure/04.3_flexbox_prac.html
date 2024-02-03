@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            display: flex;
+            /* height: 50px; */
+            margin-bottom: 20px;
+        }
+
+        .box1{
+            background-color: lightpink;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+        }
+
+        .box2 {
+            background-color: lightskyblue;
+            width: 200px;
+        }
+
+        .box2_1{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box1">
+            <span style="
+                align-items: center; 
+                background-color: black;
+                color: white;">Text1</span>
+        </div>
+        <div class="box2">
+            <span>wtf</span>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="box1">
+            <span style="
+                align-items: center; 
+                background-color: black;
+                color: white;">Text1</span>
+        </div>
+        <div class="box2">
+            <span>wtf</span>
+            <div class="box2_1">
+                <span style="
+                    background-color: black;
+                    color: white;">text1</span>
+                <span style="
+                    background-color: black;
+                    color: white;">text2</span>
+            </div>
+            <span>row3</span>
+        </div>
+    </div>
+</body>
+</html>

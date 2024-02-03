@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /* body{
+            background-color: rgba(0,0,0,0.8);
+        } */
+
+        .sidebar{
+            background-color: darkcyan;
+            position:fixed;
+            top:0;
+            /* left:0; */
+            bottom:0;
+            right:0;
+            width: 100px;
+        }
+
+        .lower{
+            background-color: black;
+            color: white;
+            position: fixed;
+            right: 10px;
+            bottom: 10px
+        }
+
+        .overlay{
+            background-color: rgba(0,0,0,0.8);
+            position: fixed;
+            top:0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal{
+            background-color: white;
+            width: 200px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <span>sidebar</span>
+    </div>
+    <div class="lower">
+        <span>lower</span>
+    </div>
+    <div class="overlay">
+        <div class="modal">
+            <h2>Modal Title</h2>
+            <p>This is modal</p>
+            <button>close</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
